@@ -27,11 +27,11 @@
 <body class="p-0">
     <!-- Barra de navegación -->
     <nav class="p-0 container-fluid bg-dark bg-gradient py-2">
-        <div class="d-flex p-0 container-fluid align-items-start justify-items-start">
-            <div class="container col-2">
-                <img class="w-75" src="./iconos/logo.png">
+        <div class="d-flex p-0 container-fluid align-items-start align-content-start justify-items-start">
+            <div class="container col-1">
+                <img class="w-25" src="./iconos/logo.png">
             </div>
-            <div class="col-8 ">
+            <div class="col-10 ">
                 <ul class="container row list-unstyled text-reset text-decoration-none">
                     <li class="col-2 container "><a href="#" class="text-decoration-none text-secondary">Inicio</a></li>
                     <li class="col-2 container"><a href="#"class="text-decoration-none text-secondary">Acerca de</a></li>
@@ -43,15 +43,15 @@
     </nav>
 
     <!-- Encabezado -->
-    <header class="container-fluid p-0 bg-primary text-white">
-        <div class="d-flex flex-column container-fluid  align-items-center justify-content-center ">
-            <h1 class="">Bienvenidos a Mi Sitio Web</h1>
+    <header class="mt-4 container-fluid p-0 bg-primary text-white">
+        <div class="py-5 d-flex flex-column container-fluid  align-items-center justify-content-center ">
+            <h1 class="fw-light">Bienvenidos a Mi Sitio Web</h1>
             <p class="">Este es un ejemplo utilizando HTML básico</p>
         </div>
     </header>
 
     <!-- Sección de Contenido -->
-    <section class="container row mx-auto">
+    <section class="container row mx-auto my-4">
         <div class="container row">
             <div class="container col-6 col-sm-7 col-lg-9">
                 <h2>Sección de Contenido Principal</h2>
@@ -110,15 +110,15 @@
         <form class="row">
             <div class="d-flex flex-column mb-3">
                 <label for="nombre">Nombre Completo</label>
-                <input class="border ps-2 rounded-1" type="text" id="nombre" placeholder="Escribe tu nombre">
+                <input class="border ps-2 py-1 rounded-1" type="text" id="nombre" placeholder="Escribe tu nombre">
             </div>
             <div class="d-flex flex-column mb-3">
                 <label for="email">Correo Electrónico</label>
-                <input class="border ps-2 rounded-1" type="email" id="email" placeholder="nombre@ejemplo.com">
+                <input class="border ps-2 py-1 rounded-1" type="email" id="email" placeholder="nombre@ejemplo.com">
             </div>
             <div class="d-flex flex-column mb-3">
                 <label for="mensaje">Mensaje</label>
-                <textarea class="border ps-2 rounded-1" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                <textarea class="border ps-2 py-1 rounded-1" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-sm w-auto ms-3">Enviar</button>
         </form>
