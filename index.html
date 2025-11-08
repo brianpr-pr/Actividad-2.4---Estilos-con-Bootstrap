@@ -14,7 +14,6 @@
   box-shadow: none;
   appearance: none;
 }
-
         .pink-box{
             background-color: #f9dddf;
             border-right: 1px solid #f1b1b7;
@@ -26,19 +25,19 @@
 </head>
 <body class="p-0">
     <!-- Barra de navegación -->
-    <nav class="p-0 container-fluid bg-dark bg-gradient py-2">
-        <div class="d-flex p-0 container-fluid align-items-start align-content-start justify-items-start">
-            <div class="container col-1">
-                <img class="w-25" src="./iconos/logo.png">
+    <nav class="container-fluid bg-dark bg-gradient py-2">
+        <div class="d-flex align-items-center justify-content-start ms-5">
+            <!-- Logo -->
+            <div class="me-5 px-5">
+            <img src="./iconos/logo.png" alt="logo" style="width:48px; height:auto;">
             </div>
-            <div class="col-10 ">
-                <ul class="container row list-unstyled text-reset text-decoration-none">
-                    <li class="col-2 container "><a href="#" class="text-decoration-none text-secondary">Inicio</a></li>
-                    <li class="col-2 container"><a href="#"class="text-decoration-none text-secondary">Acerca de</a></li>
-                    <li class="col-2 container"><a href="#"class="text-decoration-none text-secondary">Servicios</a></li>
-                    <li class="col-2 container"><a href="#"class="text-decoration-none text-secondary">Contacto</a></li>
-                </ul>
-            </div>
+            <!-- Enlaces agrupados al inicio -->
+            <ul class="nav ms-5 ps-5">
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary w-50" href="#">Acerca de</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -106,18 +105,18 @@
 
     <!-- Formulario -->
     <section class="container row mx-auto d-flex flex-column">
-        <h2 class="row">Formulario de Contacto</h2>
+        <h2 class="row ps-4">Formulario de Contacto</h2>
         <form class="row">
             <div class="d-flex flex-column mb-3">
-                <label for="nombre">Nombre Completo</label>
+                <label for="nombre" class="mb-2">Nombre Completo</label>
                 <input class="border ps-2 py-1 rounded-1" type="text" id="nombre" placeholder="Escribe tu nombre">
             </div>
             <div class="d-flex flex-column mb-3">
-                <label for="email">Correo Electrónico</label>
+                <label for="email" class="mb-2">Correo Electrónico</label>
                 <input class="border ps-2 py-1 rounded-1" type="email" id="email" placeholder="nombre@ejemplo.com">
             </div>
             <div class="d-flex flex-column mb-3">
-                <label for="mensaje">Mensaje</label>
+                <label for="mensaje" class="mb-2">Mensaje</label>
                 <textarea class="border ps-2 py-1 rounded-1" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-sm w-auto ms-3">Enviar</button>
